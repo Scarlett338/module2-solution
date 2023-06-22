@@ -1,0 +1,96 @@
+
+
+
+/************************************** General *************************************/
+*{
+  box-sizing: border-box;
+  }
+  
+body {
+  font-size: 16px;
+  color:rgb(0, 0, 0);
+  background-color:#e6e6e7;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-size: 1.75em;
+}
+
+h2{
+  font-size: 1.25em;
+}
+
+/***********************************************************************/
+
+.container{
+  text-align: center;
+
+}
+
+
+.menu-tile{  
+  border: 2px solid black;
+  background-color: darkgrey;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+}
+
+/**************************************  responsive *************************************/
+.col-lg-4, .col-md-6, .col-sm-12{
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+/************************ mobile *******************************/
+@media only screen and (max-width:767px) {
+  .col-sm-12{width: 100%;}
+}
+
+/************************ tablet *******************************/
+@media only screen and (max-width:991px) and (min-width:768px){
+  .col-md-6{width: 50%;}
+  .col-md-12{width:100%;}
+}
+
+/************************ laptop *******************************/
+@media only screen and (min-width:992px){
+  .col-lg-4 {width: 33.3%;}
+}
+
+
+/***********************************************************************/
+/* tile header */
+.menu-tile div{  
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.row div:nth-child(1) div div{
+  background-color:rgb(222, 135, 135);
+  color: black;
+}
+
+.row div:nth-child(2) div div{
+  background-color:rgb(129, 4, 4);
+  color: white;
+}
+
+.row div:nth-child(3) div div{
+  background-color:burlywood;
+  color: black;
+}
+
+/* tile text */
+.menu-tile p{
+  padding-top: 45px;
+}
